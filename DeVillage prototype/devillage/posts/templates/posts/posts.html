@@ -1,0 +1,11 @@
+{%extends 'core/base.html'%}
+{%block title%}{{post.title}}{%endblock%}
+
+{%block content%}
+<div>
+    <h1>{{post.title}}</h1>
+    <h4>{{post.description|truncatewords:1}}</h4>
+    <img src="{{post.image.url}}" height="60%" width="60%">
+    <p style="float: center; padding: 20px;" >{{post.post}}</p>
+</div>
+{%endblock%}

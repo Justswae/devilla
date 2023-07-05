@@ -1,0 +1,2 @@
+frontpage to show posts- index  page
+post details page - posts.html/ posts app

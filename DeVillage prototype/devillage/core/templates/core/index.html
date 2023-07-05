@@ -1,0 +1,15 @@
+{%extends 'core/base.html'%}
+{%block title%}Welcome {%endblock%}
+
+{%block content%}
+<div style="padding: 30px;">
+    {%for post in posts%}
+    <h1>{{post.title}}</h1>
+    <h3>{{post.description}}</h3>
+    <img src="{{post.image.url}}" height="60%" width="60%">
+    <p>{{post.post}}</p>
+    <a href="{%url 'posts:post' post.id%}">CLick here</a>
+    {%endfor%}
+
+</div>
+{%endblock%}
